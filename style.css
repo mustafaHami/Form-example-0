@@ -50,14 +50,20 @@
     border-radius: 50%;
     width: 40%;
     margin-top: -75px;
-    border: 2px solid #dd296e;
+    border: 2px solid #1ca5d7;
+    transition: 1s;
+  }
+  .avatar img:hover {
+    width: 52%;
+    cursor: pointer;
   }
   .container form {
     padding: 0 40px;
+    margin-top: 10px;
   }
 
   form .txt-field {
-    margin: 30px 0px ;
+    margin: 20px 0px ;
     position: relative;
     border-bottom: 2px solid #ffffff;
   }
@@ -94,13 +100,57 @@
     top: -13%;
   }
 
-.txt-field input:focus ~ span::before {
-    width: 100%;
-}
-.forget{
-    padding: 0 5px;
-}
-.forget a {
-    text-decoration: none;
+  .txt-field input:focus ~ span::before {
+      width: 100%;
+  }
+  .forget{
+      
+      display: flex;
+      flex-direction: column;
+  }
+  .forget a {
+      padding: 0 5px;
+      text-decoration: none;
+      color: rgb(194, 194, 194);
+      margin: 10px 0;
+  }
+  .forget span {
+    margin: 5px 0;
+  }
+  .forget span:hover {
+    color: rgb(226, 226, 226);
+    text-decoration: underline;
+  }
+  .forget button {
+    border: 1px solid white;
+    border-radius:22px;
+    background: linear-gradient(-45deg, #dd296e, #1ca5d7);
+    color : white;
+    padding: 14px;
+    margin: 20px 0 38px 0 ;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  .forget button:hover {
+    border-color: #18d9ac;
     
-}
+  }
+  .signup {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+
+  .signup span {
+    color: rgb(194, 194, 194);
+  }
+
+  .signup a {
+    text-decoration: none;
+    color: white;
+  }
+  .signup a:hover {
+    color: rgb(226, 226, 226);
+    text-decoration: underline;
+  }
